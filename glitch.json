@@ -1,0 +1,22 @@
+{
+    "install": "pip3 install -r requirements.txt",
+    "start": "python3 app.py",
+    "watch": {
+      "ignore": [
+        "\\.pyc$",
+        "Pipfile.lock"
+      ],
+      "install": {
+        "include": [
+          "Pipfile"
+        ]
+      },
+      "restart": {
+        "include": [
+          "\\.py$",
+          "python3 app.py"
+        ]
+      },
+      "throttle": 1000
+    }
+  }

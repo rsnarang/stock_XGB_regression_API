@@ -27,6 +27,7 @@ def predict():
 
     if not predictors:
         return jsonify({'error': 'You need to supply two values'}), 400
+
     return jsonify({
         "Volume Prediction": int(volume_prediction(model, predictors))
     })
