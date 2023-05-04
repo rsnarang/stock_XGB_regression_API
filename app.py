@@ -16,7 +16,7 @@ def home():
     return "Hello there!"
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET'])
 def predict():
 
     vol_moving_avg = int(request.args.get("vol_moving_avg"))
